@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const server = app.listen(5000,  () => {
   console.log('listening on *:5000');
