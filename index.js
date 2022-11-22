@@ -6,6 +6,12 @@ const server = app.listen(5000, () => {
   console.log('listening on *:5000');
 });
 
+
+
+ app.get('/', (req, res) => {
+   res.send('Welcome to out chat room');
+ });
+
 const io = require('socket.io')(server);
 
 
