@@ -1,9 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 5000;
-const hostname = '0.0.0.0';
 
-const server = app.listen(5000, hostname, () => {
+const server = app.listen(5000,  () => {
   console.log('listening on *:5000');
 });
 
